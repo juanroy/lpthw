@@ -5,7 +5,7 @@ class ConcurrentProcess(Process):
 
     def consultar_datos(self):
 
-        conn = pymssql.connect(server='172.16.2.1', user='undanet', password='undanet2015', port=1433, database='neuman')
+        conn = pymssql.connect(server='', user='', password='', port=, database='')
 
         #for i in range(1,5):
             #query = 'select id, active, alias, configuration from dbo.status_platform where id = %d' % i
