@@ -23,7 +23,7 @@ if __name__ == "__main__":
     print '\n', threading.currentThread().getName(), 'Lanzado thread principal......................................'
 
     #Relleno la cola con la informacion de los cron a ejecutar
-    conn = pymssql.connect(server='172.16.5.1', user='undanet', password='undanet2015', port=1433, database='neuman')
+    conn = pymssql.connect(server='', user='', password='', port=, database='')
     query = 'select sp.id, sp.alias, sp.cronCommand, sp.description from neuman.dbo.stock_platform sp join neuman.dbo.platform p on p.id = sp.platform_id where sp.active = 1 and sp.is_webservice = 0 and p.active = 1'
     cursor = conn.cursor()
     cursor.execute(query)
