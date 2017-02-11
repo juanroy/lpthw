@@ -9,7 +9,7 @@ import pymssql
 # Set up some global variables
 num_fetch_threads = 2
 q = Queue()
-conn = pymssql.connect(server='172.16.2.1', user='undanet', password='undanet2015', port=1433, database='neuman')
+conn = pymssql.connect(server='', user='', password='', port=, database='')
 query = 'select sp.id, sp.alias, sp.cronCommand, sp.description from neuman.dbo.stock_platform sp join neum an.dbo.platform p on p.id = sp.platform_id where sp.active = 1 and sp.is_webservice = 0 and p.active = 1'
 cursor = conn.cursor()
 
